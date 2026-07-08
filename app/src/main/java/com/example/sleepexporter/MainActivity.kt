@@ -12,7 +12,6 @@ import android.provider.Settings
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -25,7 +24,7 @@ import java.util.Locale
  *
  * Requires the user to grant "Usage access" (PACKAGE_USAGE_STATS).
  */
-class MainActivity : AppCompatActivity() {
+class MainActivity : android.app.Activity() {
 
     private lateinit var logView: TextView
 
